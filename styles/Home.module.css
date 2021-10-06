@@ -8,14 +8,23 @@
   flex-direction: column;
 }
 
+.contentArea {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .buttonArea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   grid-area: 'a' 'a';
   padding: 10px;
-  width: 70%;
-  height: 20%;
+  width: 100%;
+  height: 25%;
 }
 
 .buttonArea button {

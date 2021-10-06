@@ -1,0 +1,11 @@
+.container {
+    border-radius: 15px;
+    color: rgb(46, 56, 77);
+    background-color: #f9f9f9;
+    user-select: none;
+    border: 1px solid #c4c4c4;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

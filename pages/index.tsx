@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { useCallback, useEffect, useState } from 'react'
-import Clock from '../components/Clock/Clock'
+import Clock from '../components/Clock'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -26,12 +26,13 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Clock time={time} />
-      <div className={styles.buttonArea}>
-        <button className={styles.start} onClick={start}>Start</button>
-        <button className={styles.stop} onClick={stop}>Stop</button>
+      <div className={styles.contentArea}>
+        <Clock time={time} />
+        <div className={styles.buttonArea}>
+          <button className={styles.start} onClick={start}>Start</button>
+          <button className={styles.stop} onClick={stop}>Stop</button>
+        </div>
       </div>
-
     </div>
   )
 }
