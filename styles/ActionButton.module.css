@@ -1,10 +1,15 @@
-.container {
+.container{
     position: absolute;
     top: 40px;
     right: 40px;
 }
 
-.container button {
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonContainer button {
     border: none;
     margin: 0;
     padding: 0;

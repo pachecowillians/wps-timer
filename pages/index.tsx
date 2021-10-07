@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       <div className={styles.contentArea}>
         <Clock time={time} />
       </div>
-      <ActionButton start={start} stop={stop} active={active} />
+      <ActionButton start={start} stop={stop} active={active} setTime={setTime}/>
     </div>
   )
 }
