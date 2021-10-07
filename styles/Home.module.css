@@ -6,10 +6,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font: 600 1.1rem 'Inter', sans-serif;
 }
 
 .contentArea {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container footer{
+  position: absolute;
+  bottom: 30px;
 }

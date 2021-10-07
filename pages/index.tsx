@@ -35,6 +35,7 @@ const Home: NextPage = () => {
         <Clock time={time} />
       </div>
       <ActionButton start={start} stop={stop} active={active} setTime={setTime} />
+      <footer>© 2021 - Willian Pacheco Silva</footer>
     </div>
   )
 }
