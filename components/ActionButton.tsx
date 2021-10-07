@@ -48,13 +48,18 @@ const ActionButton: React.FC<ActionButtonProps> = ({ start, stop, active, setTim
                 </button>
 
             </div>
-            <div className={styles.timeOptions}>
-                <TimeOption time={5} setTime={setTime} start={start} opened={opened} close={close} />
-                <TimeOption time={10} setTime={setTime} start={start} opened={opened} close={close} />
-                <TimeOption time={25} setTime={setTime} start={start} opened={opened} close={close} />
-                <TimeOption time={30} setTime={setTime} start={start} opened={opened} close={close} />
-                <TimeOption time={45} setTime={setTime} start={start} opened={opened} close={close} />
-            </div>
+            {
+                !opened || (
+                    <div className={styles.timeOptions}>
+                        <TimeOption time={5} setTime={setTime} start={start} opened={opened} close={close} />
+                        <TimeOption time={10} setTime={setTime} start={start} opened={opened} close={close} />
+                        <TimeOption time={25} setTime={setTime} start={start} opened={opened} close={close} />
+                        <TimeOption time={30} setTime={setTime} start={start} opened={opened} close={close} />
+                        <TimeOption time={45} setTime={setTime} start={start} opened={opened} close={close} />
+                    </div>
+                )
+            }
+
         </div>
     )
 }

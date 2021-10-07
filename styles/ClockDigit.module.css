@@ -9,3 +9,10 @@
     align-items: center;
     justify-content: center;
 }
+
+@media(max-width:720px) {
+    .container {
+        font-size: 87.5%;
+        width: 100px;
+    }
+}

@@ -10,7 +10,7 @@ type TimeOptionProps = {
 }
 
 const TimeOption: React.FC<TimeOptionProps> = ({ time, setTime, start, opened, close }) => {
-    
+
     function startClock() {
         setTime(time * 60);
         close();
@@ -19,7 +19,7 @@ const TimeOption: React.FC<TimeOptionProps> = ({ time, setTime, start, opened, c
 
     return (
         <>
-            <div className={styles.container} onClick={startClock} style={!opened ? { opacity: 0 } : { opacity: 1 }}>
+            <div className={styles.container} onClick={startClock}>
                 {time} min
             </div>
         </>
