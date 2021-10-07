@@ -10,6 +10,7 @@
     font: 600 1rem 'Inter', sans-serif;
     color: #fbfbfb;
     transition: all ease 0.2s;
+    opacity: 1;
 }
 
 .container:hover{
