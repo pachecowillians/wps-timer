@@ -31,8 +31,20 @@ const ActionButton: React.FC<ActionButtonProps> = ({ start, stop, active, setTim
         <div className={styles.container}>
             <div className={styles.buttonContainer}>
                 <button onClick={buttonAction} className={active ? styles.active : styles.notActive}>
-                    {/* <span>{!active ? '▶' : '🗙'}</span> */}
-                    <div className={!active ? styles.start : styles.stop} />
+                    {
+                        active ?
+                            (
+                                <div className={styles.stop} />
+                            ) : opened ? (
+                                <div className={styles.close} />
+                            ) : (
+                                <div className={styles.iconContainer}>
+                                    <div className={styles.open}></div>
+                                    <div className={styles.open}></div>
+                                    <div className={styles.open}></div>
+                                </div>
+                            )
+                    }
                 </button>
 
             </div>

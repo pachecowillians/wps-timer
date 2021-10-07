@@ -1,4 +1,4 @@
-.container{
+.container {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -34,7 +34,7 @@
     border-left: 15px solid #fbfbfb;
 }
 
-.stop {
+.close {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -42,11 +42,11 @@
     height: 32px;
 }
 
-.stop:hover {
+.close:hover {
     opacity: 1;
 }
 
-.stop:before, .stop:after {
+.close:before, .close:after {
     position: absolute;
     right: 29px;
     top: 18px;
@@ -56,11 +56,11 @@
     background-color: #fbfbfb;
 }
 
-.stop:before {
+.close:before {
     transform: rotate(45deg);
 }
 
-.stop:after {
+.close:after {
     transform: rotate(-45deg);
 }
 
@@ -78,4 +78,23 @@
 
 .active:hover {
     background-color: #cf364f;
+}
+
+.iconContainer {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.open {
+    width: 25px;
+    height: 3px;
+    background-color: #fbfbfb;
+    margin: 5px 0;
+}
+
+.stop{
+    width: 15px;
+    height: 15px;
+    border-radius: 1px;
+    background-color: #fbfbfb;
 }
