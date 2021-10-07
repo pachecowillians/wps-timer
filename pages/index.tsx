@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import { useCallback, useEffect, useState } from 'react'
 import ActionButton from '../components/ActionButton'
 import Clock from '../components/Clock'
@@ -27,10 +28,13 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Início | WPS Timer</title>
+      </Head>
       <div className={styles.contentArea}>
         <Clock time={time} />
       </div>
-      <ActionButton start={start} stop={stop} active={active} setTime={setTime}/>
+      <ActionButton start={start} stop={stop} active={active} setTime={setTime} />
     </div>
   )
 }
