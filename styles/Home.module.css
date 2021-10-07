@@ -9,47 +9,7 @@
 }
 
 .contentArea {
-  width: 60%;
-  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-
-.buttonArea {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  grid-area: 'a' 'a';
-  padding: 10px;
-  width: 100%;
-  height: 25%;
-}
-
-.buttonArea button {
-  border-radius: 10px;
-  margin: 0px;
-  border: none;
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  font: 600 2rem Inter, sans-serif;
-  outline: none;
-  transition: all ease 0.25s;
-}
-
-.start {
-  background-color: #5965e0;
-}
-
-.start:hover {
-  filter: brightness(0.9);
-}
-
-.stop {
-  background-color: #ed2d4d;
-}
-
-.stop:hover {
-  filter: brightness(0.9);
 }

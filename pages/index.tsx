@@ -1,16 +1,17 @@
 import type { NextPage } from 'next'
 import { useCallback, useEffect, useState } from 'react'
+import ActionButton from '../components/ActionButton'
 import Clock from '../components/Clock'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
 
-  const [time, setTime] = useState(25 * 60);
+  const [time, setTime] = useState(0);
   const [active, setActive] = useState(false);
 
   const start = useCallback(() => { setActive(true) }, [],)
 
-  const stop = useCallback(() => { setActive(false) }, [],)
+  const stop = useCallback(() => { setActive(false); setTime(0) }, [],)
 
   useEffect(() => {
     if (active) {
@@ -28,11 +29,8 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <div className={styles.contentArea}>
         <Clock time={time} />
-        <div className={styles.buttonArea}>
-          <button className={styles.start} onClick={start}>Start</button>
-          <button className={styles.stop} onClick={stop}>Stop</button>
-        </div>
       </div>
+      <ActionButton start={start} stop={stop} active={active} />
     </div>
   )
 }
