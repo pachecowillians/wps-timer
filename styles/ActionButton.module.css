@@ -65,11 +65,11 @@
 }
 
 .notActive {
-    background-color: #5965e0;
+    background-color: #4953b8;
 }
 
 .notActive:hover {
-    background-color: #4953b8;
+    background-color: #424ba6;
 }
 
 .active {
@@ -92,7 +92,7 @@
     margin: 5px 0;
 }
 
-.stop{
+.stop {
     width: 15px;
     height: 15px;
     border-radius: 1px;

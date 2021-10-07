@@ -5,12 +5,13 @@
     justify-content: center;
     background-color: #f0294a;
     border-radius: 10px;
-    padding: 10px 35px;
+    padding: 17px 45px;
     cursor: pointer;
-    font: 600 1rem 'Inter', sans-serif;
+    font: 600 1.1rem 'Inter', sans-serif;
     color: #fbfbfb;
     transition: all ease 0.2s;
     opacity: 1;
+    user-select: none;
 }
 
 .container:hover{
