@@ -19,3 +19,15 @@
   position: absolute;
   bottom: 30px;
 }
+
+@media(max-width:720px) {
+  .container span{
+      font-size: 87.5%;
+  }
+}
+
+@media(max-width:420px) {
+  .container span{
+      font-size: 50%;
+  }
+}
