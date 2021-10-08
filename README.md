@@ -6,7 +6,11 @@ Tools used:
 - NextJS
 - ReactJS
     - useState
+    - useEffect
     - useCallback
+    - components
+- Typescript
 - Javascript
 - HTML
 - CSS
+    - CSS modules
