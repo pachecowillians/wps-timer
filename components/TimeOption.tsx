@@ -12,7 +12,7 @@ type TimeOptionProps = {
 const TimeOption: React.FC<TimeOptionProps> = ({ time, setTime, start, opened, close }) => {
 
     function startClock() {
-        setTime(time);
+        setTime(time * 60);
         close();
         start();
     }
