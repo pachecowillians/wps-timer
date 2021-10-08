@@ -15,9 +15,25 @@ const Home: NextPage = () => {
   const stop = useCallback(() => { setActive(false); setTime(0) }, [],)
 
   useEffect(() => {
+    Notification.requestPermission()
+  }, [])
+
+  useEffect(() => {
     if (active) {
       const interval = setInterval(() => {
-        setTime(time - 1);
+        if (time == 0) {
+          new Audio('/alarm.wav').play()
+
+          if (Notification.permission === 'granted') {
+            new Notification("The time is over!", {
+              body: `Take a break and start again!`
+            })
+          }
+          setActive(false);
+          setTime(0);
+        } else {
+          setTime(time - 1);
+        }
       }, 1000);
 
       return () => {
