@@ -30,8 +30,7 @@ const Home: NextPage = () => {
                             body: `Take a break and start again!`
                         })
                     }
-                    setActive(false);
-                    setTime(0);
+                    stop();
                 } else {
                     setTime(time - 1);
                 }
@@ -54,7 +53,7 @@ const Home: NextPage = () => {
 
     const times = [
         {
-            value: 1 * 60,
+            value: 1,
             label: '1 minute',
         },
         {
