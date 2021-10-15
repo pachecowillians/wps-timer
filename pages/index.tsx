@@ -54,6 +54,10 @@ const Home: NextPage = () => {
 
     const times = [
         {
+            value: 1 * 60,
+            label: '1 minute',
+        },
+        {
             value: 5 * 60,
             label: '5 minutes',
         },
