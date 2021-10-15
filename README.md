@@ -8,8 +8,9 @@ Tools used:
     - useState
     - useEffect
     - useCallback
-    - components
+    - Components
 - Typescript
+- Material UI
 - Javascript
 - HTML
 - CSS
