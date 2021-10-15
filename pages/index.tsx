@@ -23,6 +23,9 @@ const Home: NextPage = () => {
         if (active) {
             const interval = setInterval(() => {
                 if (time == 0) {
+
+                    stop();
+                    
                     new Audio('/alarm.wav').play()
 
                     if (Notification.permission === 'granted') {
@@ -30,7 +33,6 @@ const Home: NextPage = () => {
                             body: `Take a break and start again!`
                         })
                     }
-                    stop();
                 } else {
                     setTime(time - 1);
                 }
