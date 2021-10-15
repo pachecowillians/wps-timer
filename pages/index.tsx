@@ -88,7 +88,7 @@ const Home: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Início | WPS Timer</title>
+                <title>WPS Timer</title>
             </Head>
             <div className={styles.contentArea}>
                 <Clock time={time} />
