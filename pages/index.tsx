@@ -99,7 +99,7 @@ const Home: NextPage = () => {
                     onClick={active ? stop : handleOpen}
                     variant="contained"
                     style={{
-                        marginTop:'50px',
+                        marginTop: '50px',
                         width: '100px',
                         height: '50px',
                         fontSize: '30px'
