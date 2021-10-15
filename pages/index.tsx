@@ -25,7 +25,7 @@ const Home: NextPage = () => {
                 if (time == 0) {
 
                     stop();
-                    
+
                     new Audio('/alarm.wav').play()
 
                     if (Notification.permission === 'granted') {
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
 
     const times = [
         {
-            value: 1,
+            value: 1 * 60,
             label: '1 minute',
         },
         {
