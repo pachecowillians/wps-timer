@@ -105,7 +105,7 @@ const Home: NextPage = () => {
                         fontSize: '30px'
                     }}
                 >
-                    {active ? '⏹' : '▶'}
+                    {active ? '■' : '▶'}
                 </Button>
                 <Dialog onClose={handleClose} open={open}>
                     <DialogTitle>How much time do you need?</DialogTitle>
