@@ -17,6 +17,8 @@ Timer used for the Pomodoro method of time management. It has several preset tim
 
 The application was hosted at Vercel and can be accessed at https://wps-timer.vercel.app/
 
+It is worth mentioning that, when cloning the repository, it is necessary to use the ```yarn``` command to load the modules and configure the application.
+
 <div align="center">
     <br/>
     <img height="50px" src="./public/languages/html.svg"/>
