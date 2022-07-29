@@ -1,9 +1,4 @@
 <div align="center">
-    <img height="150em" src="./public/wps.svg"/>
-    <br/>
-</div>
-
-<div align="center">
     <br/>
     <img src="./public/wpstimer.gif"/>
     <br>
@@ -15,6 +10,11 @@
 <br/>
 
 # WPS timer
+
+<div align="center">
+    <br/>
+    <img height="100em" src="./public/wps.svg"/>
+</div>
 
 <br/>
 
@@ -28,3 +28,4 @@ Timer used for the Pomodoro method of time management. It has several preset tim
     <img height="50px" src="./public/languages/reactjs.svg"/>
     <img height="50px" src="./public/languages/nextjs.svg"/>
 </div>
+
