@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                     </List>
                 </Dialog>
             </div>
-            <footer>© 2021 - Willian Pacheco Silva</footer>
+            <footer>© {new Date().getFullYear()} - Willian Pacheco Silva</footer>
         </div>
     )
 }
