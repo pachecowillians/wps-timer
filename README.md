@@ -15,6 +15,8 @@
 
 Timer used for the Pomodoro method of time management. It has several preset times and gives an audible alert and a notification when the time is up.
 
+The application was hosted at Vercel and can be accessed at https://wps-timer.vercel.app/
+
 <div align="center">
     <br/>
     <img height="50px" src="./public/languages/html.svg"/>
@@ -26,5 +28,3 @@ Timer used for the Pomodoro method of time management. It has several preset tim
 </div>
 
 <br/>
-
-A aplicação foi hospedada na Vercel e pode ser acessada em https://wps-timer.vercel.app/
