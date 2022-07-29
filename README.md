@@ -7,7 +7,6 @@
 
 
 <br/>
-<br/>
 
 # WPS timer
 
