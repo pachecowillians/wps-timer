@@ -25,3 +25,6 @@ Timer used for the Pomodoro method of time management. It has several preset tim
     <br/>
 </div>
 
+<br/>
+
+A aplicação foi hospedada na Vercel e pode ser acessada em https://wps-timer.vercel.app/
