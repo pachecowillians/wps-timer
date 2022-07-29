@@ -11,11 +11,6 @@
 
 # WPS timer
 
-<div align="center">
-    <br/>
-    <img height="100em" src="./public/wps.svg"/>
-</div>
-
 <br/>
 
 Timer used for the Pomodoro method of time management. It has several preset times and gives an audible alert and a notification when the time is up.
@@ -27,5 +22,6 @@ Timer used for the Pomodoro method of time management. It has several preset tim
     <img height="50px" src="./public/languages/javascript.svg"/>
     <img height="50px" src="./public/languages/reactjs.svg"/>
     <img height="50px" src="./public/languages/nextjs.svg"/>
+    <br/>
 </div>
 
