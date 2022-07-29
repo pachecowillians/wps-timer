@@ -90,10 +90,19 @@ const Home: NextPage = () => {
         start();
     };
 
+    let seconds = time%60
+    let minutes = (time - seconds)/60
+    
+    let secondsDigit1 = (seconds - (seconds%10))/10
+    let secondsDigit2 = seconds%10
+
+    let minutesDigit1 = (minutes - (minutes%10))/10
+    let minutesDigit2 = minutes%10
+
     return (
         <div className={styles.container}>
             <Head>
-                <title>WPS Timer</title>
+                <title>WPS Timer - {minutesDigit1}{minutesDigit2}:{secondsDigit1}{secondsDigit2}</title>
             </Head>
             <div className={styles.contentArea}>
                 <Clock time={time} />
