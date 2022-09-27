@@ -102,7 +102,7 @@ const Home: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>WPS Timer - {minutesDigit1}{minutesDigit2}:{secondsDigit1}{secondsDigit2}</title>
+                <title>{minutesDigit1}{minutesDigit2}:{secondsDigit1}{secondsDigit2} | WPS Timer</title>
             </Head>
             <div className={styles.contentArea}>
                 <Clock time={time} />
