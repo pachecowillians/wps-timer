@@ -9,9 +9,9 @@
     gap: 10px;
 }
 
-.container span{
+.container span {
     margin: 0;
     padding: 0;
     border: 0;
-    color: rgb(46, 56, 77);
+    color: var(--black);
 }
