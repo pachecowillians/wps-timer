@@ -1,34 +1,52 @@
 .container {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font: 600 1.1rem 'Inter', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font: 600 1.1rem 'Inter', sans-serif;
+}
+
+.timeSelection {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.clockContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
 }
 
 .contentArea {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container footer {
-  position: absolute;
-  bottom: 30px;
-  color: var(--black);
+    position: absolute;
+    bottom: 30px;
+    color: var(--black);
 }
 
 @media(max-width:720px) {
-  .container span {
-    font-size: 87.5%;
-  }
+    .container span {
+        font-size: 87.5%;
+    }
 }
 
 @media(max-width:420px) {
-  .container span {
-    font-size: 50%;
-  }
+    .container span {
+        font-size: 50%;
+    }
 }
