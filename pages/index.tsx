@@ -84,7 +84,7 @@ const Home: NextPage = () => {
             </Head>
             <div className={styles.clockContainer}>
                 <div className={styles.contentArea} onClick={start}>
-                    <Clock time={time} />
+                    <Clock time={time} getDigits={getDigits}/>
                 </div>
                 <div className={styles.timeSelection}>
                     <TimeSelector name='Pomodoro' selectedTime={selectedTime} selectTime={selectTime} />

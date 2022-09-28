@@ -2,27 +2,24 @@ import React from 'react'
 import ClockDigit from '../ClockDigit/ClockDigit';
 import styles from './styles.module.css'
 
-type ClockProps = {
+interface ClockProps {
     time: number;
+    getDigits: () => {
+        minutes: number[];
+        seconds: number[];
+    };
 }
 
-const Clock: React.FC<ClockProps> = ({ time }) => {
-    let seconds = time % 60
-    let minutes = (time - seconds) / 60
-
-    let secondsDigit1 = (seconds - (seconds % 10)) / 10
-    let secondsDigit2 = seconds % 10
-
-    let minutesDigit1 = (minutes - (minutes % 10)) / 10
-    let minutesDigit2 = minutes % 10
+const Clock: React.FC<ClockProps> = ({ time, getDigits }) => {
+    let { minutes, seconds } = getDigits();
 
     return (
         <div className={styles.container}>
-            <ClockDigit digit={minutesDigit1} />
-            <ClockDigit digit={minutesDigit2} />
+            <ClockDigit digit={minutes[1]} />
+            <ClockDigit digit={minutes[0]} />
             <span>:</span>
-            <ClockDigit digit={secondsDigit1} />
-            <ClockDigit digit={secondsDigit2} />
+            <ClockDigit digit={seconds[1]} />
+            <ClockDigit digit={seconds[0]} />
         </div>
     )
 }
