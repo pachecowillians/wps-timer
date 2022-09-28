@@ -22,4 +22,5 @@
 
 .selected {
     background-color: var(--blue);
+    font-weight: 500;
 }

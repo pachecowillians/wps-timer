@@ -11,7 +11,7 @@ interface timeSelectorProps {
 export function TimeSelector({ name, selectedTime, selectTime }: timeSelectorProps) {
     let classes = [styles.container];
     selectedTime == name && classes.push(styles.selected)
-    return <div className={classes.join(' ')} onClick={() => { selectTime(name) }}>
+    return <button className={classes.join(' ')} onClick={() => { selectTime(name) }}>
         <span>{name}</span>
-    </div>
+    </button>
 }
