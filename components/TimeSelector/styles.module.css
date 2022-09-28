@@ -5,6 +5,15 @@
     user-select: none;
     border-radius: 5px;
     display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: all ease 0.2s;
+}
+
+.container:hover {
+    filter: opacity(0.9);
 }
 
 .container span {

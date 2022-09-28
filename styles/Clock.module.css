@@ -1,5 +1,6 @@
 .container {
-    font: 600 12rem 'Rajdhani', sans-serif;
+    font: 600 7rem 'Rajdhani', sans-serif;
+    line-height: 7.5rem;
     user-select: none;
     display: grid;
     grid-template-columns: 1fr 1fr 0.1fr 1fr 1fr;

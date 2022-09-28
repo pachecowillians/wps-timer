@@ -7,11 +7,9 @@ type ClockDigitProps = {
 
 const ClockDigit: React.FC<ClockDigitProps> = ({ digit }) => {
     return (
-        <>
-            <div className={styles.container}>
-                {digit}
-            </div>
-        </>
+        <div className={styles.container}>
+            {digit}
+        </div>
     )
 }
 

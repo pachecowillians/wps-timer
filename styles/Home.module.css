@@ -10,12 +10,15 @@
 }
 
 .timeSelection {
-    display: flex;
-    align-content: center;
-    flex-direction: row;
-    align-items: center;
     width: 100%;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: stretch;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .clockContainer {
@@ -39,7 +42,7 @@
     color: var(--black);
 }
 
-@media(max-width:720px) {
+/* @media(max-width:720px) {
     .container span {
         font-size: 87.5%;
     }
@@ -49,4 +52,4 @@
     .container span {
         font-size: 50%;
     }
-}
+} */
