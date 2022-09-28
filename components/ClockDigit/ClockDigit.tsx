@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/ClockDigit.module.css'
+import styles from './styles.module.css'
 
 type ClockDigitProps = {
     digit: number;

@@ -1,5 +1,5 @@
 import React from 'react'
-import ClockDigit from '../ClockDigit';
+import ClockDigit from '../ClockDigit/ClockDigit';
 import styles from './styles.module.css'
 
 type ClockProps = {
