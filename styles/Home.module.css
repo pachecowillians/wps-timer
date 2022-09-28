@@ -21,13 +21,17 @@
     gap: 1rem;
 }
 
+.timeSelection div:first-child {
+    grid-column: 1 / -1;
+}
+
 .clockContainer {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
-    row-gap: 4rem;
+    row-gap: 3rem;
 }
 
 .contentArea {
@@ -42,14 +46,12 @@
     color: var(--black);
 }
 
-/* @media(max-width:720px) {
-    .container span {
-        font-size: 87.5%;
+@media(min-width:1000px) {
+    .timeSelection {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .timeSelection div:first-child {
+        grid-column: 1
     }
 }
-
-@media(max-width:420px) {
-    .container span {
-        font-size: 50%;
-    }
-} */

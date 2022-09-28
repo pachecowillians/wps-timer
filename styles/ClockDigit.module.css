@@ -10,16 +10,8 @@
     padding: 0rem 0.5rem;
 }
 
-/* @media(max-width:720px) {
+@media(min-width:600px) {
     .container {
-        font-size: 87.5%;
-        width: 100px;
+        padding: 0rem 1rem;
     }
 }
-
-@media(max-width:420px) {
-    .container {
-        font-size: 50%;
-        width: 70px;
-    }
-} */

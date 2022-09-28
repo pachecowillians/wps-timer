@@ -1,5 +1,5 @@
 .container {
-    font: 600 7rem 'Rajdhani', sans-serif;
+    font: 600 6rem 'Rajdhani', sans-serif;
     line-height: 7.5rem;
     user-select: none;
     display: grid;
@@ -19,4 +19,11 @@
     padding: 0;
     border: 0;
     color: var(--black);
+}
+
+@media(min-width:600px) {
+    .container *,
+    .container {
+        font-size: 10rem;
+    }
 }
