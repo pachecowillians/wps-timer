@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
 
-    const [time, setTime] = useState(0);
+    const [time, setTime] = useState(25 * 60);
     const [active, setActive] = useState(false);
     const [selectedTime, setSelectedTime] = useState<timeName>('Pomodoro')
 
@@ -16,10 +16,34 @@ const Home: NextPage = () => {
 
     const stop = useCallback(() => { setActive(false); setTime(0) }, [],)
 
+    function getDigits() {
+        let seconds = time % 60
+        let minutes = (time - seconds) / 60
 
+        let secondsDigits = [0, 0]
+        let minutesDigits = [0, 0]
+
+        secondsDigits[1] = (seconds - (seconds % 10)) / 10
+        secondsDigits[0] = seconds % 10
+
+        minutesDigits[1] = (minutes - (minutes % 10)) / 10
+        minutesDigits[0] = minutes % 10
+
+        return {
+            minutes: minutesDigits,
+            seconds: secondsDigits
+        };
+    }
 
     function selectTime(name: timeName) {
         setSelectedTime(name)
+        if (name == 'Pomodoro') {
+            setTime(25 * 60);
+        } else if (name == 'Long Break') {
+            setTime(15 * 60);
+        } else if (name == 'Short Break') {
+            setTime(5 * 60);
+        }
     }
 
     useEffect(() => {
@@ -51,22 +75,15 @@ const Home: NextPage = () => {
         }
     }, [time, active]);
 
-    let seconds = time % 60
-    let minutes = (time - seconds) / 60
-
-    let secondsDigit1 = (seconds - (seconds % 10)) / 10
-    let secondsDigit2 = seconds % 10
-
-    let minutesDigit1 = (minutes - (minutes % 10)) / 10
-    let minutesDigit2 = minutes % 10
+    let { minutes, seconds } = getDigits();
 
     return (
         <div className={styles.container}>
             <Head>
-                <title>{minutesDigit1}{minutesDigit2}:{secondsDigit1}{secondsDigit2} | WPS Timer</title>
+                <title>{minutes[1]}{minutes[0]}:{seconds[1]}{seconds[0]} | WPS Timer</title>
             </Head>
             <div className={styles.clockContainer}>
-                <div className={styles.contentArea}>
+                <div className={styles.contentArea} onClick={start}>
                     <Clock time={time} />
                 </div>
                 <div className={styles.timeSelection}>
