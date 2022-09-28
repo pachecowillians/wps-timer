@@ -69,14 +69,13 @@ const Home: NextPage = () => {
                 <title>{minutesDigit1}{minutesDigit2}:{secondsDigit1}{secondsDigit2} | WPS Timer</title>
             </Head>
             <div className={styles.clockContainer}>
+                <div className={styles.contentArea}>
+                    <Clock time={time} />
+                </div>
                 <div className={styles.timeSelection}>
                     <TimeSelector name='Pomodoro' selectedTime={selectedTime} selectTime={selectTime} />
                     <TimeSelector name='Short Break' selectedTime={selectedTime} selectTime={selectTime} />
                     <TimeSelector name='Long Break' selectedTime={selectedTime} selectTime={selectTime} />
-                    <TimeSelector name='Custom' selectedTime={selectedTime} selectTime={selectTime} />
-                </div>
-                <div className={styles.contentArea}>
-                    <Clock time={time} />
                 </div>
                 <TimerButton />
                 <footer>© {new Date().getFullYear()} - Willian Pacheco Silva</footer>
