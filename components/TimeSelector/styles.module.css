@@ -12,8 +12,11 @@
     transition: all ease 0.2s;
 }
 
-.container:hover {
-    filter: opacity(0.9);
+@media (hover: hover) {
+    .container:hover {
+        filter: opacity(0.9);
+    }
+
 }
 
 .container span {
