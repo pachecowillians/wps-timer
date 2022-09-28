@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useCallback, useEffect, useState } from 'react'
-import Clock from '../components/Clock'
+import Clock from '../components/Clock/Clock'
 import TimerButton from '../components/TimerButton/TimerButton'
 import { timeName, TimeSelector } from '../components/TimeSelector/TimeSelector'
 import styles from '../styles/Home.module.css'

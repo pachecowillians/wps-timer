@@ -1,6 +1,6 @@
 import React from 'react'
-import styles from '../styles/Clock.module.css'
-import ClockDigit from './ClockDigit'
+import ClockDigit from '../ClockDigit';
+import styles from './styles.module.css'
 
 type ClockProps = {
     time: number;
