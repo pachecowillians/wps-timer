@@ -1,7 +1,7 @@
 .container {
-    background-color: #3f51b5;
+    background-color: var(--blue);
     padding: 0.5rem 2rem;
-    line-height: 1.2rem;
+    line-height: 0.5rem;
     border-radius: 5px;
     color: var(--white);
     cursor: pointer;

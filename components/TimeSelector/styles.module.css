@@ -1,5 +1,5 @@
 .container {
-    background-color: #e0e0e0;
+    background-color: var(--grey);
     color: var(--white);
     cursor: pointer;
     user-select: none;
@@ -21,5 +21,5 @@
 }
 
 .selected {
-    background-color: #3f51b5;
+    background-color: var(--blue);
 }
