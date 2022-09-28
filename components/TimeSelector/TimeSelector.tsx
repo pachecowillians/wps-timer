@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 
-type timeName = 'Pomodoro' | 'Short Break' | 'Long Break' | 'Custom';
+export type timeName = 'Pomodoro' | 'Short Break' | 'Long Break';
 
 interface timeSelectorProps {
     name: timeName;

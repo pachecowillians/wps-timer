@@ -3,13 +3,10 @@ import Head from 'next/head'
 import { useCallback, useEffect, useState } from 'react'
 import Clock from '../components/Clock'
 import TimerButton from '../components/TimerButton/TimerButton'
-import { TimeSelector } from '../components/TimeSelector/TimeSelector'
+import { timeName, TimeSelector } from '../components/TimeSelector/TimeSelector'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
-
-    type timeName = 'Pomodoro' | 'Short Break' | 'Long Break' | 'Custom';
-
 
     const [time, setTime] = useState(0);
     const [active, setActive] = useState(false);
