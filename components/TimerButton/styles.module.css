@@ -1,0 +1,14 @@
+.container {
+    background-color: #3f51b5;
+    padding: 0.5rem 2rem;
+    line-height: 1.2rem;
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+    user-select: none;
+    transition: all ease 0.2s;
+}
+
+.container:hover{
+    filter: opacity(0.9);
+}

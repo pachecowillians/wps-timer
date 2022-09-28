@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useCallback, useEffect, useState } from 'react'
 import Clock from '../components/Clock'
+import TimerButton from '../components/TimerButton/TimerButton'
 import { TimeSelector } from '../components/TimeSelector/TimeSelector'
 import styles from '../styles/Home.module.css'
 
@@ -77,6 +78,7 @@ const Home: NextPage = () => {
                 <div className={styles.contentArea}>
                     <Clock time={time} />
                 </div>
+                <TimerButton />
                 <footer>© {new Date().getFullYear()} - Willian Pacheco Silva</footer>
             </div>
         </div>
