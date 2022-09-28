@@ -10,6 +10,10 @@
     gap: 10px;
 }
 
+.container * {
+    font: 600 6rem 'Rajdhani', sans-serif;
+}
+
 .container span {
     margin: 0;
     padding: 0;
