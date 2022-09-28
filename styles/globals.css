@@ -4,6 +4,8 @@
     --black: #2e384d;
     --digit-border: #c4c4c4;
     --red: #d8544f;
+    --blue: #3e50b3;
+    --grey: #e0e0e0;
 }
 
 html,
@@ -24,6 +26,7 @@ a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
 body,
