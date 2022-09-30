@@ -14,7 +14,15 @@ const Home: NextPage = () => {
 
     const start = useCallback(() => { setActive(true) }, [],)
 
-    const stop = useCallback(() => { setActive(false); setTime(0) }, [],)
+    const stop = useCallback(() => { setActive(false); selectTime(selectedTime); }, [],)
+
+    function toggleActive() {
+        if (!active) {
+            start();
+        } else {
+            stop();
+        }
+    }
 
     function getDigits() {
         let seconds = time % 60
@@ -36,7 +44,8 @@ const Home: NextPage = () => {
     }
 
     function selectTime(name: timeName) {
-        setSelectedTime(name)
+        setActive(false);
+        setSelectedTime(name);
         if (name == 'Pomodoro') {
             setTime(25 * 60);
         } else if (name == 'Long Break') {
@@ -84,14 +93,14 @@ const Home: NextPage = () => {
             </Head>
             <div className={styles.clockContainer}>
                 <div className={styles.contentArea} onClick={start}>
-                    <Clock time={time} getDigits={getDigits}/>
+                    <Clock time={time} getDigits={getDigits} />
                 </div>
                 <div className={styles.timeSelection}>
                     <TimeSelector name='Pomodoro' selectedTime={selectedTime} selectTime={selectTime} />
                     <TimeSelector name='Short Break' selectedTime={selectedTime} selectTime={selectTime} />
                     <TimeSelector name='Long Break' selectedTime={selectedTime} selectTime={selectTime} />
                 </div>
-                <TimerButton />
+                <TimerButton toggleActive={toggleActive} active={active} />
                 <footer>© {new Date().getFullYear()} - Willian Pacheco Silva</footer>
             </div>
         </div>
