@@ -96,9 +96,9 @@ const Home: NextPage = () => {
                     <Clock time={time} getDigits={getDigits} />
                 </div>
                 <div className={styles.timeSelection}>
-                    <TimeSelector name='Pomodoro' selectedTime={selectedTime} selectTime={selectTime} />
-                    <TimeSelector name='Short Break' selectedTime={selectedTime} selectTime={selectTime} />
-                    <TimeSelector name='Long Break' selectedTime={selectedTime} selectTime={selectTime} />
+                    <TimeSelector name='Pomodoro' selectedTime={selectedTime} selectTime={selectTime} active={active} />
+                    <TimeSelector name='Short Break' selectedTime={selectedTime} selectTime={selectTime} active={active} />
+                    <TimeSelector name='Long Break' selectedTime={selectedTime} selectTime={selectTime} active={active} />
                 </div>
                 <TimerButton toggleActive={toggleActive} active={active} />
                 <footer>© {new Date().getFullYear()} - Willian Pacheco Silva</footer>
