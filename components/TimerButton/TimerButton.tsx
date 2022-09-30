@@ -1,9 +1,16 @@
 import styles from './styles.module.css'
 
-export default function TimerButton() {
-    return <button className={styles.container}>
+interface timerButtonProps {
+    active: boolean;
+    toggleActive: () => void;
+}
+
+export default function TimerButton({ active, toggleActive }: timerButtonProps) {
+    let containerClasses = [styles.container];
+    active && containerClasses.push(styles.active);
+    return <button className={containerClasses.join(' ')} onClick={toggleActive}>
         <span className="material-symbols-outlined">
-            play_arrow
+            {!active ? 'play_arrow' : 'stop'}
         </span>
     </button>
 }
