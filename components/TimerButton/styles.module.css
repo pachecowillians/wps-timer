@@ -9,6 +9,10 @@
     transition: all ease 0.2s;
 }
 
+.active{
+    background-color: var(--red);
+}
+
 @media (hover: hover) {
     .container:hover {
         filter: opacity(0.9);
